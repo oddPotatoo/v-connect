@@ -4,9 +4,7 @@
 
 ## 📌 Description
 
-The OCR-Based Access Control System for Visitor Vehicle Entry in Gated Areas integrates these technologies to automate visitor verification through ID scanning. The system extracts essential data from valid IDs via OCR, and generates a unique QR code as a temporary access pass. Utilizing open-source and cost-efficient hardware, including a Raspberry Pi 4, cameras, thermal printer, and LCD display, the system provides a scalable, secure, and user-friendly solution. Its implementation is expected to reduce processing times, minimize human error, and improve both traffic flow and security in gated communities.
-
-The web-based administrative dashboard was developed using the .NET framework. This dashboard serves as the primary interface for the system administrators to monitor visitor activity and view detailed logs. It connects securely to the PostgreSQL database and displays real-time data including current entries, exits, and pending sessions.
+Volunteer Connect is a software system to improve volunteer management processes for social and civic welfare volunteer activities in the Paranaque City Area. The purpose of the website is to establish a centralized platform for volunteers and organizations to come together and collaborate on community service projects. The system will allow volunteers to search for volunteer program opportunities based on their desired interests and availability. It will include a user-friendly interface that will streamline the volunteer application process, allowing volunteers to apply for activities that resonate with them. The system will also authorize organizations to manage their program schedule and desired number of volunteers.
 
 ---
 

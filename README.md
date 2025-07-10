@@ -1,4 +1,4 @@
-# OCR-Based Access Control System Application
+# Volunteer Connect
 
 ![Banner Image](assets/ocr-logo-land.png)
 

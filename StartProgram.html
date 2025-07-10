@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville:wght@400;700&family=Poppins:wght@600&family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+   
+    <link rel="stylesheet" href="./css/StartProgram.css" />
+    <link rel="stylesheet" href="./css/StartProgram1.css" />
+  </head>
+  <body>
+    <!-- <body>                                                                                                                      --------------------     Start a Program (FORM)     ---------------------------------     -->
+     <!-- HEADER -->
+     <header>
+        
+      <nav class="navbar">
+        <a href="./index.html"><img src="./media/logo.png"  id="vc"></a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a  class="nav-link" onclick="toggleMenu1()">Volunteer Programs</a>
+            </li>
+            <li class="nav-item">
+                <a href="./HowItWorks.html" class="nav-link">How It Works</a>
+            </li>
+            <li class="nav-item">
+                <a href="./FAQs.html" class="nav-link">FAQs</a>
+            </li>
+        </ul>
+        <div class="rightSide">
+            <div class="searchC">
+                <div class="icon"></div>
+                <div class="input">
+                    <input type="text" placeholder="Search" id="mysearch">
+                </div>
+                <span class="clear" onclick="document.getElementById('mysearch').value=''"></span>
+            </div>
+            <hr>
+            <button class="login" onclick="toggleMenu2()">Sign in</button>
+        </div>
+        
+     <!-- for mobile view -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar" onclick="toggleMenu()"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+       
+    </header>
+
+     <!-- nav for programs ------------------->
+     <div class="sub-menu-wrap" id="subMenu1">
+        <div class="sub-menu">
+                <hr>
+                <a href="./progams.html" class="sub-menu-link">
+
+                    <p>VOLUNTEER TRAINING
+                        PROGRAMS</p>
+                    <span>></span>
+                </a>
+
+                <a href="./programs2.html" class="sub-menu-link">
+
+                    <p>SOCIAL AND CIVIC
+                        WELFARE PROGRAMS</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+       <!-- nav for log in ----------------> 
+    <div class="sub-menu-registerLogin" id="register">
+        <div class="sub-menu">
+                <hr>
+                <a  class="sub-menu-link">
+                   
+                    <p onclick="toggleMenu4()">Organization</p>
+                    <span onclick="toggleMenu4()">></span>
+                </a>
+    
+                <a class="sub-menu-link">
+                    
+                    <p onclick="toggleMenu3()">Volunteer</p>
+                    <span onclick="toggleMenu3()">></span>
+                </a>
+            </div>
+        </div>
+    
+    </div>
+       <!-- Register Volunteer ------------------>
+<div class="sub-menu-volunteer" id="volunteer1">
+    <div class="sub-menu-register">
+            
+        <div class="container">
+            <div class="signin-signup">
+                <form action="" class="sign-in-form">
+                    <h1>Login to <img src="./media/logo2.png" class="logo2"><span class="cnct">Connect </span> </h1>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Email Address">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Login" class="btn">
+                    <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Sign up</a></p>
+                </form>
+                <form action="" class="sign-up-form">   
+                    <h2 class="title">Volunteer</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder=" Confirm Password">
+                    </div>
+                    <input type="submit" value="Sign up" class="btn">
+                    <p class="disclaimer-text">By clicking "Sign Up" you agree to our <a href="#" class="orange-link"
+                      onclick="showTermsPopup()">Terms of Use</a>, <a href="#" class="orange-link"
+                      onclick="showPrivacyPopup()">Privacy Policy</a>, and <a href="#" class="orange-link"
+                      onclick="showDisclaimerPopup()">Disclaimer</a></p>
+                    <p class="account-text"> Already have an account? <a href="#" id="sign-in-btn2">Sign in</a></p>
+                </form>
+            </div>
+            <div class="panels-container">
+                <div class="panel left-panel">  
+                    <div class="content">
+                        <h3>Already have an account? </h3>
+                        <p>Let's get you back logged in!</p>
+                        <button class="btn" id="sign-in-btn">Sign in</button>
+                    </div>
+                    <img src="signin.svg" alt="" class="image">
+                </div>
+                <div class="panel right-panel">
+                    <div class="content">
+                        <h3>New Here?</h3>
+                        <p>We'll get you signed up in no time!</p>
+                        <button class="btn" id="sign-up-btn">Sign up</button>
+                        
+                    </div>
+                    <img src="signup.svg" alt="" class="image">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+<!-- register organization ---------------------------------------------------------->
+<div class="sub-menu-organization" id="organization1">
+    <div class="sub-menu-register">
+
+        <div class="container" id="container1">
+            <div class="signin-signup">
+                <form action="" class="sign-in-form">
+                    <h1>Login to <img src="./media/logo2.png" class="logo2"><span class="cnct">Connect </span> </h1>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Add the name of your foundation here">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Organization Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Login" class="btn">
+                    <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn21">Sign up</a></p>
+                </form>
+                <form action="" class="sign-up-form">   
+                    <h2 class="title">Organization</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Add the name of your organization here">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Organization Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder=" Confirm Password">
+                    </div>
+                    <input type="submit" value="Sign up" class="btn">
+                    <p class="disclaimer-text">By clicking "Sign Up" you agree to our <a href="#" class="orange-link"
+                      onclick="showTermsPopup()">Terms of Use</a>, <a href="#" class="orange-link"
+                        onclick="showPrivacyPopup()">Privacy Policy</a>, and <a href="#" class="orange-link"
+                        onclick="showDisclaimerPopup()">Disclaimer</a></p>
+                    <p class="account-text"> Already have an account? <a href="#" id="sign-in-btn21">Sign in</a></p>
+                </form>
+            </div>
+            <div class="panels-container">
+                <div class="panel left-panel">
+                    <div class="content">
+                        <h3>Already have an account? </h3>
+                        <p>Let's get you back logged in!</p>
+                        <button class="btn" id="sign-in-btn1">Sign in</button>
+                    </div>
+                    <img src="signin2.svg" alt="" class="image">
+                </div>
+                <div class="panel right-panel">
+                    <div class="content">
+                        <h3>New Here?</h3>
+                        <p>We'll get you signed up in no time!</p>
+                        <button class="btn" id="sign-up-btn1">Sign up</button>
+                        
+                    </div>
+                    <img src="signup2.svg" alt="" class="image">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="container" id="container">
+      <div class="displayStep" id="displayStep">
+        <div class="circle">
+          <div class="circle1" id="circle1"><p>1</p></div>
+          <div class="circle2" id="circle2"><p>2</p></div>
+          <div class="circle3" id="circle3"><p>3</p></div>
+          <div class="circle4" id="circle4"><p>4</p></div>
+        </div>
+        <div class="steps">
+          <div class="step1">
+            <p>STEP 1</p>
+            <span>Get Started</span>
+            
+          </div>
+          <div class="step1">
+            <p>STEP 2</p>
+            <span>Mission Statement</span>
+            
+          </div>
+          <div class="step1">
+            <p>STEP 3</p>
+            <span>Verification</span>
+          </div>
+          <div class="step1">
+            <p>STEP 4</p>
+            <span>SUMMARY</span>
+          </div>
+        </div>
+      </div>
+      <div class="stepContainer" id="stepContainer">
+        <!--PERSO INFOS -------------------------------------------------------------------->
+        <div class="affichStep">
+          <div class="stepInfo" id="stepInfo">
+            <h1 class="Start">Start A Program</h1>
+            <h3 class="descrition2" > 
+              Volunteer Program Information
+            </h3>
+            
+            <div class="flexError">
+              <p>Program Title</p>
+              <span id="errorName"></span>
+            </div>
+            <input
+              type="text"
+              name=""
+              id="infoName"
+              placeholder="e.g. Basic Life Support"
+            />
+            <div class="flexError">
+              <p>Organization Name</p>
+              <span id="errorName"></span>
+            </div>
+            <input
+              type="text"
+              name=""
+              id="infoName"
+              placeholder="e.g. VolunteerConnect"
+            />
+            <h3 class="descrition2">Person In Charge</h3>
+            <div class="flexError">
+              <p>Full Name</p>
+              <span id="errorName"></span>
+            </div>
+            <input
+              type="text"
+              name=""
+              id="infoName"
+              placeholder="e.g. Juan Dela Cruz"
+            />
+            <div class="flexError">
+              <p>Email Address</p>
+              <span id="errorMail"></span>
+            </div>
+            <input
+              type="text"
+              name=""
+              id="infoMail"
+              placeholder="e.g. juandelacruz@gmail.com"
+            />
+            <div class="flexError">
+              <p>Phone Number</p>
+              <span id="errorNum"></span>
+            </div>
+            <input
+              type="text"
+              name=""
+              id="infoNumber"
+              placeholder="e.g. +1 234 567 890"
+            />
+            <h3 class="descrition2">Program Details</h3>
+            <div class="flexError">
+              <p>Number of Volunteers Needed</p>
+              <span id="errorName"></span>
+            </div>
+            <input
+              type="text"
+              name=""
+              id="infoName"
+              placeholder=" Specify the Number"
+            />
+            <div class="flexError">
+              <p>Program Schedule</p>
+              <span id="errorDate"></span>
+            </div>
+            <input
+              type="date"
+              name=""
+              id="infoDate"
+              placeholder="Select a date"
+            />
+            <div class="flexError">
+              <p>Project Time</p>
+              <span id="errorTime"></span>
+            </div>
+            <input
+              type="time"
+              name=""
+              id="infoTime"
+              placeholder="Select a time"
+            />
+            <div class="flexError">
+              <p>Location</p>
+              <span id="errorName"></span>
+            </div>
+            <input
+              type="text"
+              name=""
+              id="infoName"
+              placeholder="Please include the complete address"
+            />
+            <p>Upload Your Photo</p>
+            <label class="custum-file-upload" for="file">
+              <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path fill="" d="M10 1C9.73478 1 9.48043 1.10536 9.29289 1.29289L3.29289 7.29289C3.10536 7.48043 3 7.73478 3 8V20C3 21.6569 4.34315 23 6 23H7C7.55228 23 8 22.5523 8 22C8 21.4477 7.55228 21 7 21H6C5.44772 21 5 20.5523 5 20V9H10C10.5523 9 11 8.55228 11 8V3H18C18.5523 3 19 3.44772 19 4V9C19 9.55228 19.4477 10 20 10C20.5523 10 21 9.55228 21 9V4C21 2.34315 19.6569 1 18 1H10ZM9 7H6.41421L9 4.41421V7ZM14 15.5C14 14.1193 15.1193 13 16.5 13C17.8807 13 19 14.1193 19 15.5V16V17H20C21.1046 17 22 17.8954 22 19C22 20.1046 21.1046 21 20 21H13C11.8954 21 11 20.1046 11 19C11 17.8954 11.8954 17 13 17H14V16V15.5ZM16.5 11C14.142 11 12.2076 12.8136 12.0156 15.122C10.2825 15.5606 9 17.1305 9 19C9 21.2091 10.7909 23 13 23H20C22.2091 23 24 21.2091 24 19C24 17.1305 22.7175 15.5606 20.9844 15.122C20.7924 12.8136 18.858 11 16.5 11Z" clip-rule="evenodd" fill-rule="evenodd"></path> </g></svg>
+              </div>
+              <div class="text">
+                 <span>Click to upload image</span>
+                 </div>
+                 <input type="file" id="file">
+              </label>
+            
+            <div class="buttonContainerStepOne">
+              <button onclick="goStepTwo()" class="nextStep">Next Step</button>
+            </div>
+          </div>
+          <!--SELECT PLAN ------------------------------------------------------------------------>
+          <div class="stepPlan" id="stepPlan">
+            <h1 class="Start">Object Declaration</h1>
+            <p class="descrition2">
+              Scope of the program
+            </p>
+              <div class="flexError2">
+                <p>Project Description</p>
+                <span id="errorName"></span>
+              </div>
+              <div class="inputContainer">
+              <input
+                type="text"
+                name=""
+                id="infoDescription"
+                placeholder="Please Include the purpose of the program"
+              />
+            </div>
+              <p class="descrition2">
+                Volunteer Requirements
+              </p>
+              <div class="flexError2">
+                <p>Age Bracket</p> </div>
+                <div class="inputContainer">
+                <span id="errorName"></span>
+              
+              <input
+                type="text"
+                name=""
+                id="infoAge"
+                placeholder="Please input the possible age of the Volunteers"
+              />
+            </div>
+              <div class="flexError2">
+                <p>Skills and Qualifications</p> </div>
+                <div class="inputContainer">
+                <span id="errorName"></span>
+              
+              <input
+                type="text"
+                name=""
+                id="infoSkills"
+                placeholder="Please Input the required skills if needed"
+              />
+            </div>
+            <div class="buttonContainerStepTwo">
+              <button onclick="backStepOne()" class="goBack">Go back</button>
+              <button onclick="goStepThree()" class="nextStep">
+                Next Step
+              </button>
+            </div>
+          </div>
+          <!--ADD ON---------------------------------------------------------------------------------->
+          <div class="stepAddOn" id="stepAddOn">
+            <h1 class="Start">OBJECTIVE DECLARATION</h1>
+            <p class="descrition">
+              "We would like to inform you that the details of the [Foundation Program Name]  are currently in the PROCESS OF APPROVAL. We are diligently working to finalize the program's specifications and ensure its alignment with our organization's mission and goals.<br><br>
+
+During this phase, we are conducting thorough evaluations, reviews, and necessary consultations to ensure that the program meets all the required criteria, legal considerations, and ethical standards. Our team is dedicated to developing a robust and impactful program that will make a positive difference in the community.<br><br>
+
+We understand your enthusiasm and interest in participating in Volunteer Connect, and we appreciate your patience during this approval process. We assure you that we are working diligently to expedite the approval and launch of the program.<br><br>
+
+We will provide further updates and notifications as soon as the approval process is completed. Your commitment and support are vital to the success of the program, and we look forward to engaging with you and the community in the near future.<br><br>
+
+Thank you for your understanding and continued dedication to our foundation and its initiatives."
+            </p>
+              <div class="buttonContainerStepFour">
+                <button onclick="backStepThree()" class="goBack">
+                  Go back
+                </button>
+                <button onclick="goToStepThankYou()" class="nextStep">
+                  I Understand
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--THANK YOU------------------------------------------------------------------------------>
+          <div class="stepThankYou" id="stepThankYou">
+            <img src="./image/icon-thank-you.svg" alt="" />
+            <h1>Thank you!</h1>
+            <p>
+              Thanks for confirming your program! We hope you have fun
+              using our platform. If you ever need support, please feel free to
+              email us at VolunteerConnect@gmail.com.
+            </p>
+            <a href="./index.html"><button>Go Back Home</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    </section>
+      <!-- border in mobile -->
+      <img src="./media/border.png" alt="" id="border12">
+      <img src="./media/border.png" alt="" id="border13"> 
+      <img src="./media/border.png" alt="" id="border14">
+    
+     <!-- Foot Header -->
+     <section class="bottom-content">
+      <hr id="bottom-border">
+      <div class="content">
+                  <!-- Featured Broadcast Networks -->
+                  <div class="brand">
+                      <h4>Featured in</h4> 
+                      <div class="border3"></div>
+                      <img src="./media/Gma.png" style="width: auto; height: 75px;">
+                      <img src="./media/Abs-cbn.png" style="width: auto; height: 75px;"> 
+                      <img src="./media/CNN.png" style="width: auto; height: 75px;"> 
+                      <img src="./media/Trustpilot.png" style="width: auto; height: 75px;"> 
+              
+                      </div>
+                   
+          <img src="./media/logo.png"  class="logo">
+
+          <p>At Volunteer Connect, we believe that everyone has the power to make a positive impact in the world. With our user-friendly interface, you can easily explore a wide range of volunteering opportunities tailored to your location, availability, and interests. Whether you have a few hours to spare each week or want to engage in a longer-term commitment, we have diverse options to suit your schedule.</p>
+              <div class="contact">
+                  <p>VC PARAÑAQUE Ltd<br>
+                      Don Galo, 125 - 180 City Road,<br>
+                      Parañaque, 1700,<br>
+                      Philippines.<br>
+                      Registered company: 000001</p>
+              </div>
+             
+              <div class="content2">
+                  <div class="learn">
+                      <h2>Learn More</h2>
+                      <ul>
+                      <li><a href="#about">About</a></li>
+                      <li><a href="./FAQs.html">FAQs</a></li>  
+                      </ul>
+                  </div>
+                  <div class="happy">
+                      <h2>User Happiness</h2>
+                      <ul>
+                      <li><a href="./contactUs.html">Contact Us</a></li>  
+                      <li><a href="./Policy.html">Privacy Policy</a></li>
+                      <li><a href="./TermsCondition.html">Terms And Conditions</a></li>
+                      </ul>
+                  </div>
+              </div>
+                  
+              
+              <div class="media">
+                  <hr class="border-media">
+                  <a href="www.facebook.com"><img src="./media/facebook.png" style=" width: auto;" height="42px"></a>
+                  <a href="www.twitter.com"><img src="./media/twitter.png" style=" width: auto;" height="40px"></a>
+                  <a href="www.instagram.com"><img src="./media/instagram.png" style=" width: auto;" height="40px"></a>
+                  <p>© 2023-2024   Copyright Volunteer Connect.   All Rights Reserved. </p>
+              </div>
+      </div> 
+  </section>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="./java/app.js"></script>
+    <script src="./java/app1.js"></script>
+    <script>
+    let subMenu1 = document.getElementById("subMenu1");
+    
+    function toggleMenu1(){
+    subMenu1.classList.toggle("open-menu1");
+    }
+    </script>
+   <script>
+    let register = document.getElementById("register");
+    
+    function toggleMenu2(){
+      register.classList.toggle("open-menu2");
+    }
+    </script>
+    <script>
+    let volunteer = document.getElementById("volunteer1");
+        
+    function toggleMenu3(){
+      volunteer.classList.toggle("open-menu3");
+      organization.classList.remove("open-menu4");
+      register.classList.remove("open-menu2");
+    }
+    function remove1(){
+        volunteer.classList.toggle("open-menu3");
+    }
+    </script>
+    <script>
+        let organization = document.getElementById("organization1");
+            
+        function toggleMenu4(){
+          organization.classList.toggle("open-menu4");
+          volunteer.classList.remove("open-menu3");
+          register.classList.remove("open-menu2");
+        
+        }
+        function remove2(){
+        organization.classList.toggle("open-menu4");
+    }
+     
+        </script>
+
+    <script src="./java/startProgram.js"></script>
+  </body>
+</html>

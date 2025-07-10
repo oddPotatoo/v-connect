@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+:root{
+    --orange: rgb(255, 139, 0);
+    --blue: rgb(0, 112, 192); 
+    --border:rgb(70, 70, 70);
+    --black:rgb(34, 34, 34);
+    --gray:rgb(129, 129, 129);
+    --lato:'Lato', sans-serif;
+ }
+
+.logos{
+    cursor: pointer;
+    width: auto;
+    height: 120px;
+}
+
+#dash{
+  position: absolute;
+  top: 140px;
+  height: 100vh;
+}
+
+.fonts{
+    margin-left: -16px;
+    margin-top: 4px;
+    font-family: var(--lato);
+    gap:2rem;
+}
+.fonts li{
+    font-size: 1.5em;
+}
+.fonts li a{
+    font-family: var(--lato);
+}
+
+.fonts li a:hover{
+    color:var(--blue);
+}
+
+.its a{
+    color: #52525C;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Lato';
+}

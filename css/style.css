@@ -1,0 +1,1820 @@
+/* webiste view*/
+
+
+*{
+	padding: 0;
+	margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Lato";
+    box-sizing: border-box;
+}
+:root {
+    --linear-grad: linear-gradient(to right, #0070C0, blue);
+    --grad-clr1: blue;
+    --grad-clr2: #0070C0;   
+}
+html{
+    scroll-behavior: smooth;
+    font-family: "Lato";
+    scroll-padding-top: 210px;
+    overflow-x: hidden;
+}
+body{
+    background: #fff;
+    color: #fff;
+    font-family: "Lato";
+   
+    
+}
+/* Header */
+header{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    height: 150px; 
+    width: 100%;
+    z-index: 999;
+   
+
+}
+
+ header img{
+    cursor: pointer;
+    width: auto;
+    height: 120px;
+ } 
+
+.nav-menu li{
+    list-style: none;
+}
+ header a{
+    color: #52525C;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Lato';
+    
+    
+
+}
+nav.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+ 
+    margin-top: 1rem;
+}
+.nav-item{
+    position: relative;
+  
+}
+
+.nav-menu{
+    display: flex;
+    gap: 2rem;
+  align-items: center;
+    width: 100%;
+}
+.nav-link{
+    cursor: pointer;
+}
+.nav-link:hover{
+    color:#0070C0;
+    font-weight: 900;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: blue;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.rightSide{
+    display: flex;
+}
+.dark-theme{
+    
+    background-color: black;
+}
+/* Nav Bar for Mobile */
+.hamburger{ 
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: flex;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #FF8B00;
+    position: relative;
+    
+}
+
+.rightSide hr{
+    width: 51.009803771972656px;
+   
+    border: 1px solid grey;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 170px;
+    top: 70px;
+
+}
+.rightSide button{
+    
+    margin: 5px;
+    width: 139px;
+    height: 47px;
+    right: 0;
+    border-radius: 13px;
+    margin-right: 1rem;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+/* Sign In*/
+ .login{
+    
+    background: #0070C0;
+    position: absolute;
+    right: 150px;
+    top: 40px;
+    color: white;
+    font-family: 'Lato';
+
+
+}
+.login:hover{
+    color:#0070C0 ;
+    background-color: white;
+
+}
+/* Dropdown for Programs */
+.sub-menu-wrap{
+    position: fixed;
+    width: 300px;
+    top: 105px;
+    left: 23%;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    z-index: 9999;
+}
+/* Dropdown for Sign in */
+.sub-menu-registerLogin{
+    position: fixed;
+    width: 280px;
+    top: 95px;
+    
+    left: 80.2%;
+    max-height:0px;
+    transition: max-height 0.5s;
+   overflow: hidden;
+    cursor: pointer;
+    z-index: 999;
+}
+.sub-menu-wrap.open-menu1{
+    max-height: 200px;
+}
+.sub-menu-registerLogin.open-menu2{
+    max-height: 200px;
+}
+.sub-menu{
+    background: #FFFFFF;
+    padding: 20px;
+    margin: 10px;
+}
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ccc;
+    margin: 12px 0;
+}
+.sub-menu-link p{
+    width: 100%;
+    color: #BFBFBF;
+    height: 50px;
+    text-align: center;
+
+}
+
+.sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+
+}
+.sub-menu-link:hover span{
+    transform:  translateX(5px);
+    color: #0070C0;
+    
+}
+.sub-menu-link:hover p{
+    font-weight: 700;
+    color: #0070C0;
+    background-color: #DAE9F4;
+}
+/*register*/
+
+.sub-menu-register .container {
+    position: relative;
+    width: 70vw;
+    height: 80vh;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.sub-menu-register .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, cyan, #0070C0);
+    z-index: 6;
+    transform: translateX(100%);
+    transition: 1s ease-in-out;
+}
+ .disclaimer-text {
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    margin-top: 10px;
+   
+  }
+  
+  .disclaimer-text .orange-link {
+    color: orange;
+    text-decoration: none;
+  }
+  .disclaimer-text .orange-link:hover {
+    text-decoration: underline;
+  }
+
+  .sub-menu-register  h1 {
+    color: blue;
+}
+.sub-menu-register .logo2 {
+    width: 40px; /* Adjust the width as needed */
+    height: 50px; /* Let the height scale proportionally */
+    vertical-align: middle;
+    margin-left: 5px; /* Adjust the margin as needed */
+  }
+
+.cnct{
+    color: orange;
+}
+
+.popup {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    text-align: left;
+    overflow-y: auto;
+    max-height: 80vh;
+    z-index: 9999;
+    
+  }
+
+ .privacy{
+    text-align: center;
+  }
+ .popup p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: black;
+    
+  }
+  .popup h4{
+    color: black;
+  }
+  .popup h5{
+    color: #000000;
+    margin-top: 10px;
+  }
+  .popup ul{
+    color: #000000;
+  } 
+.popup-button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background: blue;
+    color: #fff;
+    font-weight: 600;
+    margin: 10px auto;
+    display: block;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+ .popup-button:hover {
+    background: white;
+    color: black;
+    border: 1px solid #0070C0;
+  }
+
+
+  .sub-menu-register .signin-signup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 5;
+}
+.sub-menu-register form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    min-width: 238px;
+    padding: 0 10px;
+}
+.sub-menu-register form.sign-in-form {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+    transition-delay: 1s;
+}
+.sub-menu-register form.sign-up-form {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    transition-delay: 1s;
+}
+.sub-menu-register .title {
+    font-size: 35px;
+    color: blue;
+    margin-bottom: 10px;
+}
+.sub-menu-register .input-field {
+    width: 100%;
+    height: 50px;
+    background: #f0f0f0;
+    margin: 10px 0;
+    border: 2px solid grey;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+.sub-menu-register .input-field i {
+    flex: 1;
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+}
+.sub-menu-register .input-field input {
+    flex: 5;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #444;
+}
+.sub-menu-register .btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background: blue;
+    color: #fff;
+    font-weight: 600;
+    margin: 10px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.sub-menu-register .btn:hover {
+    background: white;
+    color: black;
+    border: 1px solid #0070C0;
+}
+.sub-menu-register .social-text {
+    margin: 10px 0;
+    font-size: 16px;
+}
+.sub-menu-register .social-media {
+    display: flex;
+    justify-content: center;
+}
+.sub-menu-register .social-icon {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #444;
+    border: 1px solid #444;
+    border-radius: 50px;
+    margin: 0 5px;
+}
+a {
+    text-decoration: none;
+}
+.sub-menu-register .social-icon:hover {
+    color: #df4adf;
+    border-color: #df4adf;
+}
+.sub-menu-register .panels-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sub-menu-register .panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 35%;
+    min-width: 238px;
+    padding: 0 10px;
+    text-align: center;
+    z-index: 6;
+}
+.sub-menu-register .left-panel {
+    pointer-events: none;
+}
+.sub-menu-register .content {
+    color: #fff;
+    transition: 1.1s ease-in-out;
+    transition-delay: 0.5s;
+}
+.sub-menu-register .panel h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.sub-menu-register .panel p {
+    font-size: 15px;
+    padding: 10px 0;
+}
+.sub-menu-register .image {
+    width: 70%;
+    transition: 1.1s ease-in-out;
+    transition-delay: 0.4s;
+}
+.sub-menu-register .left-panel .image,
+.sub-menu-register .left-panel .content {
+    transform: translateX(-200%);
+}
+.sub-menu-register .right-panel .image,
+.sub-menu-register .right-panel .content {
+    transform: translateX(0);
+}
+.account-text {
+    display: none;
+}
+/*Animation*/
+.sub-menu-register .container.sign-up-mode::before {
+    transform: translateX(0);
+}
+.sub-menu-register .container.sign-up-mode .right-panel .image,
+.sub-menu-register .container.sign-up-mode .right-panel .content {
+    transform: translateX(200%);
+}
+.sub-menu-register .container.sign-up-mode .left-panel .image,
+.sub-menu-register .container.sign-up-mode .left-panel .content {
+    transform: translateX(0);
+}
+.sub-menu-register .container.sign-up-mode form.sign-in-form {
+    opacity: 0;
+}
+.sub-menu-register .container.sign-up-mode form.sign-up-form {
+    opacity: 1;
+}
+.sub-menu-register .container.sign-up-mode .right-panel {
+    pointer-events: none;
+}
+.sub-menu-register .container.sign-up-mode .left-panel {
+    pointer-events: all;
+}
+/*Responsive*/
+@media (max-width:779px) {
+    .sub-menu-register .container {
+        width: 30vw;
+        height: 50vh;
+        margin-right: 1000px;
+    }
+}
+@media (max-width:635px) {
+
+    .sub-menu-register form {
+        width: 40%;
+    }
+   
+    .sub-menu-register .container.sign-up-mode2 form.sign-up-form {
+        display: flex;
+        opacity: 1;
+    }
+  
+  
+    
+    .sub-menu-register .account-text {
+        display: initial;
+        margin-top: 30px;
+    }
+}
+@media (max-width:320px) {
+    .sub-menu-register form {
+        width: 90%;
+    }
+}
+.sub-menu-volunteer .container{
+    width: 1070px;
+    height: 650px;
+}
+.sub-menu-organization .container{
+    width: 1070px;
+    height: 550px;
+}
+/* DISPLAY FOR VOLUNTEER SIGN IN */
+.sub-menu-volunteer{
+    position: fixed;
+    width: 1600px;
+    left: 12%;
+    top: 120px;
+    height: 550px;
+ 
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .5s;
+    z-index: 99;
+}
+.sub-menu-volunteer.open-menu3{
+    max-height: 1500px;
+    margin-top: -10px;
+}
+/* DISPLAY FOR ORG SIGN IN */
+.sub-menu-organization{
+    position: fixed;
+    width: 1600px;
+    left: 12%;
+    top: 120px;
+    height: 550px;
+ 
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .5s;
+    z-index: 99;
+}
+.sub-menu-organization.open-menu4{
+    max-height: 1500px;
+    margin-top: -10px;
+}
+/* Home Page Pic*/
+.Home_pic{
+    position:relative;
+  
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  
+}
+.Home_pic .contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+.Home_pic img{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Picture1.png);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Home_pic h1{
+    width: 1212px;
+height: 81px;
+font-family: "Lato";
+font-size: 32px;
+font-weight: 800;
+line-height: 77px;
+letter-spacing: 0em;
+text-align: center;
+padding-left: 11em;
+position: absolute;
+top: 10em;
+color: white;
+display: flex;
+
+}
+.Home_pic button{
+
+    width: 221px;
+height: 48.94117736816406px;
+position: absolute;
+top: 24em;
+justify-self: center;
+border-radius: 13px;
+background-color: #FF8B00;
+font-family: "Lato";
+font-size: 18px;
+font-weight: 700;
+margin-left: -3em;
+color: white;
+cursor: pointer;
+z-index: 9;
+}
+.Home_pic button:hover{
+font-weight: 900;
+color: #000000;
+}
+/* Feature*/
+.feature{
+    height: 50vh;
+    display: flex;
+
+}
+
+.feature h1{
+
+
+width: 356px;
+height: 86px;
+margin-top: 4em;
+margin-left: 3rem;
+font-family: 'Libre Baskerville';
+font-style: normal;
+font-weight: 900;
+font-size: 20px;
+line-height: 43px;
+text-align: left;
+
+color: black;
+}
+
+.feature p{
+
+width: 418px;
+height: 471px;
+margin-left: 3rem;
+margin-top: 4em;
+font-family: 'Libre Baskerville';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 31px;
+text-align: left;
+margin-bottom: 0;
+
+color: #3D426A;
+}
+
+ .button_program{
+    position: absolute;
+width: 621px;
+height: 83px;
+left: 106px;
+top: 513px;
+
+background: #0070C0;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 13px;
+
+left: 719px;
+top: 426px;
+
+font-family: 'Libre Baskerville';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 50px;
+/* identical to box height */
+cursor: pointer;
+
+
+color: #FFFFFF
+
+}
+
+
+.sub-menu-link p:hover {
+    font-weight: 600;
+}
+/* Collaboration*/
+.compare .content{
+    position: relative;
+}
+.compare{
+display: block;
+width: 405px;
+height: 426.3px;
+background: #DBF0FF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 45px;
+justify-content: center;
+align-items: center;
+margin-left: 3rem;
+position: relative;
+top: -25rem;
+}
+.compare h1{
+    position: relative;
+width: 309px;
+height: 53.08px;
+left: 1rem;
+top: 20.74px;
+
+font-family: 'Libre Baskerville';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 42px;
+text-align: center;
+margin-bottom: 30px;
+
+color: #1668BD;
+}
+.compare p{
+    position: absolute;
+width: 292.69px;
+height: 117.27px;
+left: 15px;
+top: 130.74px;
+margin-top: 5px;
+
+font-family: 'Libre Baskerville';
+font-size: 11px;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0em;
+text-align: center;
+
+
+color: #8A8A8A;
+}
+.compare .connect-b{
+position: absolute;
+width: 361px;
+height: 67px;
+left: 20px;
+top: 211.74px;
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 13px;
+font-family: 'Libre Baskerville';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 50px;
+border: none;
+/* identical to box height */
+cursor: pointer;
+padding-left: 60px;
+
+
+color: #FFB318;
+}
+.compare img{
+    position: absolute;
+    left: 70px;
+    top: 211.74px;
+
+}
+.compare h2{
+    position: absolute;
+width: 106px;
+height: 46.72px;
+left: 156px;
+top: 279px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 50px;
+text-align: center;
+
+color: #3D426A;
+}
+.org{
+    display: inline-flex;
+    position: relative;
+    top: 50px;
+    right: -1rem;
+}
+.org img{
+    position: relative;
+   
+}
+
+/* CARD*/
+.card-container {
+    margin: 30px auto;
+    display: flex;
+    place-items: center;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    top:-1.4rem;
+  }
+  
+ .Programs {
+    width: 260px;
+    height: 400px;
+    padding-top: 20px;
+    display: inline-flex;
+    overflow: hidden;
+    position: relative;
+    margin-top: 6rem;
+    border-radius: none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    flex: 0 0 260px; /* Ensure each program card stays in a line block */
+    margin-left: 1rem;
+  }
+  
+  .Programs h1 {
+    color: White;
+    position: absolute;
+    font-family: 'lato';
+    font-size: 12px;
+    width: 320px;
+    font-weight: 700;
+    text-shadow: 6px 2px 5px #003580;
+    left: -2.5rem;
+    top: -3rem;
+  }  
+  .Programs h4{
+    position: relative;
+    left: 10px;
+    top: -380px;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    color: black;
+    }
+  
+  .card {
+      
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  }
+  
+  .card img {
+  display: block;
+  width: 50%;
+  height: 50%;
+  }
+  
+  .card-body h2{
+  position: relative;
+  width: 619px;
+  height: 31px;
+  left: 12rem;
+  top: 1rem;
+  margin-left: 10px;
+  
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 31px;
+  /* identical to box height */
+  
+  
+  color: black;
+  }
+  .card-body p{
+    position: relative;
+    width: 503px;
+    height: 25px;
+    left: 12rem;
+    top: 3rem;
+    margin: -30px;
+    
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 8px;
+    line-height: 15px;
+    /* identical to box height */
+    
+    
+    color: black;
+    }
+  .card-body img{
+    position: relative;
+    top: 1.1rem;
+    margin: 30px;
+    left: -6rem;
+    }
+  .container-bar{
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 18px;
+    top: 18rem;
+    transition: width 2s linear;
+    
+    
+    }
+  .progress-container{
+    margin-bottom: 25px;
+    
+    }
+  .container-bar .progress-container .progress-bar{
+    position: relative;
+    width: 220px;
+    height: 20px;
+    border-radius: 6px;
+    background-color: #DBF0FF;
+    box-shadow: 3px 4px 5px 0px rgba(204, 185, 185, .75);
+    transition: width 2s ;
+    }
+  .container-bar .progress-container .progress-bar span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 6px;
+    background: #003580;
+    transition: width 2s linear;
+    
+    }
+  .card-body{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: none;
+   
+    }
+    .pic2{
+    position: absolute;
+    left: 0px;
+    top: -20px;
+    margin-top: 0;
+    
+    }
+    .card-body h4{
+    position: absolute;
+    width: 503px;
+    height: 25px;
+    left: 18px;
+    top: 20rem; 
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    /* identical to box height */
+    
+    
+    color: #3D426A;
+    }
+  .pc-two{
+    position: absolute;
+    right: 150px;
+    top: 650px;
+  }
+  
+  .Programs  .card{
+  width: 480px;
+  height: 580px;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+  
+  }
+  
+  .Programs .card {
+    font-size: 22px;
+    font-weight: 700;
+    opacity: 1;
+    
+   display: flex;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+   
+  }
+  
+  .Programs  .card-body{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 220%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    cursor: pointer;
+    pointer-events: none;
+    transform: translateY(100%);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  
+  
+  .Programs :hover .card-body{
+  transform: translateY(0);
+  cursor: pointer;
+  }
+  
+  .Programs :hover .card {
+  transform: translateY(-30%);
+  }
+  .Programs2 :hover .card-body{
+  transform: translateY(0);
+  cursor: pointer;
+  }
+  
+  .Programs2 :hover .swiper-slide {
+  transform: translateY(-30%);
+  }
+  .Programs3 :hover .card-body{
+  transform: translateY(0);
+  cursor: pointer;
+  }
+  
+  .Programs3 :hover .card{
+  transform: translateY(-30%);
+  }
+  
+/* Dicover img and button*/
+.Discover{
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   margin-top: 25rem;
+   margin-left: 20rem;
+}
+.Discover .contents{
+   display: inline-flex;
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Discover button{
+
+    top: 25rem;
+    width: 207px;
+    height: 47px;
+    margin-left: 5rem ;
+    background: #FFFFFF;
+    
+    border-radius: 13px;
+    cursor: pointer;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    border: 1px solid #8A8A8A;
+    margin-right: 0px;
+    z-index: 9;
+    
+    color: #52525C;
+    }
+    .Discover button:hover{
+        color: white;
+        background-color:#0070C0 ;
+    
+    }
+    .Discover img{
+        margin-top: 7rem;
+        top: 96rem;
+        width: auto;
+        height: 420px;
+    }
+
+    footer {
+        margin-top: 40px;
+      }
+    /* FOOTHEADER--------- */
+         .bottom-content .brand h4{
+        width: 217px;
+        height: 25px;
+        margin: 20px;
+        padding: 20px;
+        margin-top: 30px;
+        position: relative;
+        top: 2.5rem;
+        
+        font-family: 'Libre Baskerville';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        /* identical to box height */
+        
+        text-align: center;
+        
+        color: rgba(0, 0, 0, 0.69);    
+    }
+    /* Featured GMA ABS CNN  TRUSTPILOT*/
+.bottom-content .brand{
+        position: relative;
+        width: 1002px;
+        height: 161px;
+        margin-left: 6rem;
+        top: -7rem;
+        background: #D9D9D9;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        }
+   
+  .bottom-content .brand img{
+        display: inline-flex;
+        margin: 20px;
+        position: relative;
+        top: -45px;
+        left: 280px;
+    }
+
+     .brand.border3{
+        position: relative;
+        width: 76px;
+        height: 0px;
+        left: 218px;
+        top: 112em;
+        
+        border: 1px solid red;
+        transform: rotate(90.01deg);
+        }
+  
+       /* Foot Header*/
+       .bottom-content{
+        display: grid;
+        place-items: center;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+        position: relative;
+        top: 0rem;
+        margin-right: 3rem;
+        
+    }
+
+    .bottom-content .logo{
+        margin-left: 20px;
+        width: auto;
+        height: 100px;
+        justify-content: left;
+        align-self: left;
+        margin-left: 6rem;
+        position: relative;
+        top: -3rem;
+        
+    }
+    
+    .bottom-content p{
+    position: absolute;
+    width: 425px;
+    height: 279px;
+    top: 15rem;
+    margin-left: 7rem;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 25px;
+    text-align: left;
+    align-items: left;
+  
+    color: #52525C;
+    }
+    .contact p{
+        position: absolute;
+    width: 669px;
+    height: 145px;
+    top: 25rem;
+   
+    margin-left: 7rem;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 25px;
+    text-align:left;
+    justify-self: left;
+    
+    color: #52525C;
+  
+    }
+    
+    .border5{
+        position: relative;
+        width: 737px;
+        height: 0px;
+        left: 640px;
+        
+        
+        border: 1px solid #8A8A8A;
+    }
+    .bottom-content .happy h2{
+        position: relative;
+    width: 407px;
+    height: 31px;
+    left: 58rem;
+    top: -18.5rem;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 31px;
+    display: inline-flex;
+    text-shadow: 2px 2px 10px;
+    color: #8A8A8A;
+    padding: 30px;
+    margin: 30px;
+    }
+    .bottom-content a{
+        text-decoration: none;
+    }
+    .bottom-content .learn h2{
+        position: relative;
+        width: 407px;
+        height: 31px;
+        left: 39rem;
+        top: -11rem;
+    text-shadow: 2px 2px 10px;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 31px;
+    display: inline-flex;
+    
+    color: #8A8A8A;
+    padding: 30px;
+    margin: 30px;
+    }
+    .learn ul{
+        margin:0;
+        padding:0;
+        list-style: none;
+        padding: 20px;
+        position: absolute;
+        top: 0%;
+    }
+    .learn li a{
+    position: relative;
+    width: 235px;
+    height: 24px;
+    left: 41.5rem;
+   top: 13.5rem;
+    display: flex;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 25px;
+    list-style: none;
+    text-decoration: none;
+    outline:none;
+  
+    
+    
+    color: #3D426A;
+    }
+    .bottom-content a:hover{
+        font-weight: 700;
+    }
+    .happy ul{
+        margin:0;
+        padding:0;
+        list-style: none;
+        padding: 20px;
+        position: relative;
+        top: 0%;
+    }
+    .happy li a{
+        position: relative;
+        width: 235px;
+        height: 24px;
+        left: 60rem;
+   top: -20rem;
+        display: flex;
+        font-family: 'Libre Baskerville';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 25px;
+        list-style: none;
+        text-decoration: none;
+        outline:none;
+      
+        
+        
+        color: #3D426A;
+        }
+    
+    
+    .media{
+ 
+        position:absolute;
+        top: -191rem;
+       
+    }
+    .media img{
+        display: inline-flex;
+        margin: 10px;
+        position: relative;
+        top: 3621.5px;
+        cursor: pointer;
+        left: 90px;
+    }
+
+    .media p{
+        position: relative;
+    width: 493px;
+    height: 19px;
+    left: 560px;
+    top: 3560px;
+    
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #000000;
+    }
+.bottom-content hr{
+    width: 1000px;
+    position: relative;
+    top: 8rem;
+    left: 3.5rem;
+ 
+}
+.media hr{
+    width: 1000px;
+    position: relative;
+    left: 100px;
+    top: 3610px;
+}
+
+
+#border12{
+    visibility: hidden;
+}
+#border13{
+    visibility: hidden;
+}
+#border14{
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+/* mobile view*/
+@media only screen and (max-width: 900px){
+    html{
+        scroll-padding-bottom: 610px;
+    }
+    header{
+        width: 100%;
+    }
+    .sub-menu-organization{
+        position: absolute;
+        top: 250px;
+        left: 310px;
+    }
+    .sub-menu-volunteer{
+        position: absolute;
+        top: 250px;
+       
+        left: 310px;
+    }
+    .hamburger{
+    display: block;
+        position: fixed;
+        left: 1600px;
+    
+
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        
+    }
+    .nav-menu{
+        position:fixed;
+        left: -100%;
+        top: 120px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+ 
+        transition: 0.3s;
+        color: black;
+        font-size: 12px;
+       
+      
+        
+        
+
+    }
+    .navbars #vc{
+        width: 260px;
+        height: 120px;
+        
+    }
+    .nav-item a{
+        font-size: 20px;
+    }
+    
+    .nav-item{
+        margin: 16px 0;
+        
+       
+    }
+    .nav-menu.active{
+    left: 0;
+    
+        
+
+    }
+    .rightSide hr{
+        visibility: hidden;
+    }
+    
+    
+    .sub-menu-wrap.open-menu{
+        max-height: 500px;
+    }
+    
+   
+    .logo{
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        
+    }
+
+
+    .rightSide button{
+        position: absolute;
+        top: 60px;
+        left: 1390px;
+    
+    }
+    .bar{
+        position: relative;
+        
+        top: 10px;
+    }
+    .Home_pic img{
+        width:1950px;
+        height: 700px;
+        position:relative;
+        right: -50rem;
+    }
+    .Home_pic h1{
+        position: absolute;
+        left: 250px;
+        font-size: 35px;
+    }
+    .Home_pic button{
+        position: absolute;
+        left: 870px;
+        top: 450px;
+    }
+    .right-side{
+        position: relative;
+        left: 1050px;
+        top: -180px;
+    }
+     .searchC{
+        position: absolute;
+        top: 280px;
+        margin-top: 1rem;
+        left: 1290px;
+    
+        
+        
+    }
+   
+    .right-side hr{
+        visibility: hidden;
+    }
+    .searchC.active{
+        position:absolute;
+        left: 1200px;
+       
+
+    }
+   
+ 
+    .Discover button{
+        position: relative;
+        top: 1230px;
+        left: 600px;
+        
+    }
+    .feature{
+        position: absolute;
+        left: 700px;
+        top: 700px;
+    }
+    .feature h1{
+        text-align: center;
+    }
+    .Discover img{
+        position: absolute;
+        left: 640px;
+        top: 2380px;
+        
+    }
+    .bottom-content .brand{
+        position: absolute;
+        top: 110px;
+        left: 550px;
+
+        margin-right: 120px;
+    }
+    .bottom-content .brand img{
+        margin-left: 30px;
+        
+    }
+    
+
+    .bottom-content{
+        position: absolute;
+        top: 3060px;
+        left: -160px;
+    }
+    .bottom-content .logo{
+        position: absolute;
+        left: 760px;
+        top: 370px;
+        width: auto;
+        height: 200px;
+    }
+    .bottom-content p{
+        text-align: center;
+        position: absolute;
+        left: 810px;
+        top: 600px;
+    }
+    .bottom-content .contact p{
+        position: absolute;
+        left: 680px;
+        top: 800px;
+
+    }
+    .bottom-content .content2{
+        position: absolute;
+        top:1210px;
+       left: 240px;
+
+    }
+    .learn ul {
+        position: absolute;
+    }
+    .learn ul a{
+        position: relative;
+        top: -4.5rem;
+    }
+    .media{
+        display: inline-flex;
+        position: absolute;
+        top: -2050px;
+        left: 890px;
+    }
+    .media img{
+        position: relative;
+        left: -53rem;
+    }
+    .media p{
+        position: absolute;
+        top: 3760px;
+        left: -120px;
+    }
+    .bottom-content hr{
+       visibility: hidden;
+    }
+    #border12{
+        visibility: visible;
+        position: absolute;
+        top: 3360px;
+        left: 300px;
+        width: 1300px;
+    }
+    #border13{
+        visibility: visible;
+        position: absolute;
+        top: 4000px;
+        left: 300px;
+        width: 1300px;
+    }
+    #border14{
+        visibility: visible;
+        position: absolute;
+        top: 4650px;
+        left: 300px;
+        width: 1300px;
+    }
+    .card-body{
+        position: absolute;
+        top: 250px;
+        height: 500px;
+    }
+    .card-body h2{
+        position: absolute;
+        top: 50px;
+        left: 60px;
+    }
+  
+    .card-body p{
+        margin: -90px;
+        padding: 10px;
+        position: relative;
+        top: 180px;
+        left: 205px;
+        height: 130px;
+        z-index: 999;
+    }
+   
+    .card-body img{
+        position: relative;
+        left: -100px;
+        top: 110px;
+        
+    }
+    .container-bar{
+        position: absolute;
+        top: 310px;
+        left:60px;
+    }
+    .Programs {
+        position: absolute;
+        top: 125%;
+        left: -340px;
+    }
+
+    
+    .card-body h4{
+        position: absolute;
+        top: 340px;
+        left:60px;
+    }
+    .sub-menu-registerLogin{
+        position: fixed;
+        margin-top: 1rem;
+        left: 1330px;
+     
+    }
+    #volunteer1{
+        position: absolute;
+        left: 340px;
+        width: 1130px;
+    }
+    #volunteer1 .sign-up-form .input-field{
+        width: 300px;
+    }
+    #organization1{
+        position: absolute;
+        left: 340px;
+    
+        width: 1130px;
+        margin-bottom: 50px;
+    }
+    #organization1 .sign-up-form .input-field{
+        width: 300px;
+    }
+    #volunteer1 .sign-up-form{
+        margin-bottom: 50px;
+    }
+    #organization1 .sign-up-form{
+        margin-bottom: 45px;
+        margin-right: 100px;
+    }
+    .popup{
+        position: fixed;
+        top: 15%;
+       
+        
+    }
+   
+}
+
+@media only screen and (max-width: 480px) {
+
+
+	.hamburger {
+		display: block;
+	}
+
+	.hamburger:hover .bar {
+		background-color: #0070C0;
+	}
+
+
+	
+	.nav-item {
+		position: static;
+		margin: 10px;
+	}
+
+	.nav-link {
+		color: #52525C;
+		font-size: 14px;
+	}
+
+	.searchC {
+		right: 10px;
+		top: 40px;
+	}
+
+	.searchC.active {
+		width: 140px;
+	}
+
+	.icon::before {
+		border: 2px solid black;
+	}
+
+	.icon::after {
+		transform: translate(4px, 4px) rotate(315deg);
+	}
+
+	.searchC .input {
+		width: 130px;
+		left: 40px;
+	}
+
+	.clear {
+		right: 10px;
+	}
+}

@@ -1,0 +1,22 @@
+
+.lists{
+    opacity: 0;
+    border-radius: 10px;
+    border:0;
+    opacity: 1;
+    border-bottom: 2px solid #FF8B00;
+    background-color: white;
+    padding-top: 5px;
+    padding-right: 5px;
+
+}
+.uls{
+    display: flex;
+}
+#searchBar{
+    border: none;
+    border-radius: 10px;
+    
+}
+
+

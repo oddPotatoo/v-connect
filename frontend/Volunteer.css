@@ -1,0 +1,178 @@
+.orange{
+    width: 150px;
+}
+
+.card .contents{
+    
+}
+
+main{
+    width: 100vh;
+
+}
+
+.medias{
+    position: absolute;
+    top: 350px;
+    width: 400px;
+    height: 421px;
+    left: 200px;
+
+}
+.card-body{
+    box-shadow: 0px 4px 20px 0px #00000040;
+    background: #FFFFFF;
+    width: 562px;
+height: 421px;
+border: 1px solid black;
+justify-content: center;
+align-self: center;
+
+top: 350px;
+left: 700px;
+
+}
+.card .contents .card-body{
+    position: absolute;
+    top: -260px;
+    left: -180px;
+} 
+
+.container-bar{
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 350px;
+    transition: width 2s linear;
+    padding-left: 20px;
+    
+    }
+.progress-container{
+    margin-bottom: 25px;
+    
+    }
+
+
+    .breaker{
+        position: absolute;
+        top: 830px;
+    }
+    @media screen and (max-width: 450px) {
+                /* Card title */
+.title-background{
+    background: #FF8B00;
+    width: 100%;
+    height: 231px;
+    position: relative;
+    justify-content: space-between;
+   align-items: center;
+    top: 20px;
+    margin-top: 30px;
+    display: inline-flex;
+   
+ }  
+ .title-background img{
+    width: 100px;
+ }
+
+
+ .title-background .contentss h1{
+    font-size: 1.5em;
+ }
+ .medias{
+    position: absolute;
+    top: 320px;
+    width: 400px;
+    height: 421px;
+    left: 10px;
+
+}
+ 
+.card-body{
+    box-shadow: 0px 4px 20px 0px #00000040;
+    background: #FFFFFF;
+    width: 400px;
+height: 421px;
+border: 1px solid black;
+justify-content: center;
+align-self: center;
+
+top: 750px;
+left: 10px;
+
+}
+.card .contents .card-body{
+    position: absolute;
+    top: -260px;
+    left: -180px;
+} 
+
+
+
+.card-body button{
+    position: absolute;
+    background: #D9D9D9;
+    color: #4AB425;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    top: 0px;
+    border: 1px solid black;
+    left: 50%;
+    width: 126.5px;
+    height: 37.5px;
+    cursor: pointer;
+    transform: translate(-50%, 0);
+}
+.container-bar .progress-container .progress-bar{
+    position: relative;
+    width: 350px;
+    height: 20px;
+    border-radius: 6px;
+    background-color: #DBF0FF;
+    box-shadow: 3px 4px 5px 0px rgba(204, 185, 185, .75);
+    transition: width 2s ;
+    }
+    #schedule{
+        background: #0070C0;
+        color: #FFFFFF;
+        text-align: center;
+        align-items: center;
+        width: 233px;
+        height: 62px;
+    
+        border-radius: 10px;
+        font-family: 'Lato';
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 24px;
+        letter-spacing: 0em;
+       position: absolute;
+       left: 50%;
+       top: 380px;
+        cursor: pointer;
+        align-content: center;
+    justify-items: center;
+    transform:translate(-50%, 0)
+    
+    }
+    .breaker{
+        position: absolute;
+        top: 1230px;
+    }
+
+    .baba{
+        display: flex;
+        flex-direction: column;
+    }
+  .heads{
+ 
+  }
+  
+    }

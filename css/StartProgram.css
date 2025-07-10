@@ -1,0 +1,155 @@
+.titles{
+    margin:1rem 0;
+}
+/* Volunter Program Information */
+input.form-control.ms-3{
+    width: 80rem;
+    border-radius: 2px;
+    height: 30px;
+    border: .5px solid	rgb(176,176,176);
+    padding: 1rem;
+   
+    
+}
+.topContainer.d-flex.flex-column .tags{
+    margin-top: .5rem;
+}
+.topContainer.d-flex.flex-column{
+    margin-left: 1rem;
+}
+.topContainer.d-flex.flex-column input{
+    margin-top: .5rem;
+}
+/* Person In Charge */
+.container.d-flex.gap-3{
+    display: flex;				  /*  <----- required        */
+    flex-wrap: wrap;
+    margin-left: 1rem;
+   justify-content: space-between;
+   width: 80rem;
+
+   
+}
+.container.d-flex.gap-3 .tags{
+    margin-top: .5rem;
+}
+.container.d-flex.gap-3 input{
+    width: 38rem;
+    border-radius: 2px;
+    height: 30px;
+    border: .5px solid	rgb(176,176,176);
+    padding: 1rem;
+    margin-top: .5rem;
+    
+}
+/* Program Details */
+.container-fluid1{
+    margin-left: 1rem;
+}
+.container-fluid1 .tags{
+   margin:1rem 0;
+
+}
+.container-fluid1 input{
+    width: 80rem;
+    border-radius: 2px;
+    height: 30px;
+    border: .5px solid	rgb(176,176,176);
+    padding: 1rem;
+}
+.sched{
+    display: flex;				  /*  <----- required        */
+    flex-wrap: wrap;
+    margin-left: 1rem;
+   justify-content: space-between;
+   width: 80rem;
+}
+.sched .tags, .location .tags, .uploadPhoto .tags, .howtoget .tags{
+    margin:1rem 0;
+
+}
+.container-fluid2 input{
+    width: 36rem;
+    border-radius: 2px;
+    height: 30px;
+    border: .5px solid	rgb(176,176,176);
+    padding: 1rem;
+}
+.time12{
+    display: flex;
+}
+.time12 p{
+    margin: 0 .5rem;
+}
+.time12 input{
+    width: 20rem;
+    border-radius: 2px;
+    height: 30px;
+    border: .5px solid	rgb(176,176,176);
+    padding: 1rem;
+}
+.location, .howtoget, .uploadPhoto{
+    margin-left: 1rem;
+}
+.location input{
+    width: 80rem;
+    border-radius: 2px;
+    height: 30px;
+    border: .5px solid	rgb(176,176,176);
+    padding: 1rem;
+}
+.howtoget textarea{
+    justify-content: center;
+    padding: 1rem;
+    width: 1280px;
+    border: .5px solid	rgb(176,176,176);
+    resize: none;
+}
+.uploadPhoto p{
+margin: .5rem 0;
+}
+/* Scope of the Program */
+.fourthContainer.d-flex.flex-column .tags{
+    margin:1rem ;
+}
+.fourthContainer.d-flex.flex-column textarea{
+    margin-left: 1rem;
+    justify-content: center;
+    padding: 1rem;
+    width: 1280px;
+    border: .5px solid	rgb(176,176,176);
+    resize: none;
+}
+/* Volunteer Requirements */
+.container-fluid.d-flex.gap-3{
+    margin-left: 1rem;
+    display: flex;				  /*  <----- required        */
+    flex-wrap: wrap;
+    margin-left: 1rem;
+   justify-content: space-between;
+   width: 80rem;
+}
+.container-fluid.d-flex.gap-3 .tags{
+    margin: 1rem 0;
+}
+.container-fluid.d-flex.gap-3 input{
+    width: 38rem;
+    border-radius: 2px;
+    height: 30px;
+    border: .5px solid	rgb(176,176,176);
+    padding: 1rem;
+}
+button{
+    margin: 1rem 0;
+    border-radius: 5px;
+    background-color: rgb(0, 112, 192); 
+    color: white;
+    height: 40px;
+    width: 120px;
+    border: none;
+}
+button:hover{
+    background-color: white;
+    color: rgb(0, 112, 192);
+    border: .5px solid black;
+}

@@ -1,0 +1,291 @@
+/* webiste view*/
+
+
+*{
+	padding: 0;
+	margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Lato";
+    box-sizing: border-box;
+}
+:root {
+    --linear-grad: linear-gradient(to right, #0070C0, blue);
+    --grad-clr1: blue;
+    --grad-clr2: #0070C0;   
+}
+html{
+    scroll-behavior: smooth;
+    font-family: "Lato";
+    scroll-padding-top: 210px;
+    overflow-x: hidden;
+}
+body{
+    background: #fff;
+    color: #fff;
+    font-family: "Lato";
+    height: 200vh;
+    
+}
+
+.title{
+    display: grid;
+    place-items: center;
+  }
+  .title h2{
+  font-family: 'Lato';
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  display: flex;
+  width: 664px;
+  height: 48px;
+  position: relative;
+  top: 12rem;
+  left: 7rem;
+  color: #0070C0;
+  
+  }
+  /* CARD*/ 
+  
+  .Allcards {
+    margin: 30px auto;
+    display: flex;
+    place-items: center;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+    top: 9rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 18rem;
+  }
+  
+  
+  .Programs {
+    width: 260px;
+    height: 400px;
+    padding-top: 20px;
+    display: inline-flex;
+    overflow: hidden;
+    position: relative;
+    margin-top: 6rem;
+    border-radius: none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    flex: 0 0 260px; /* Ensure each program card stays in a line block */
+    margin-left: 1rem;
+  }
+  
+  .Programs h1 {
+    color: White;
+    position: absolute;
+    font-family: 'lato';
+    font-size: 12px;
+    width: 320px;
+    font-weight: 700;
+    text-shadow: 6px 2px 5px #003580;
+    left: -2.5rem;
+    top: -3rem;
+  }  
+  .Programs h4{
+    position: relative;
+    left: 10px;
+    top: -380px;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    color: black;
+    }
+  
+  .card {
+      
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  }
+  
+  .card img {
+  display: block;
+  width: 50%;
+  height: 50%;
+  }
+  
+  .card-body h2{
+  position: relative;
+  width: 619px;
+  height: 31px;
+  left: 12rem;
+  top: 1rem;
+  margin-left: 10px;
+  
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 31px;
+  /* identical to box height */
+  
+  
+  color: black;
+  }
+  .card-body p{
+    position: relative;
+    width: 503px;
+    height: 25px;
+    left: 12rem;
+    top: 3rem;
+    margin: -30px;
+    
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 8px;
+    line-height: 15px;
+    /* identical to box height */
+    
+    
+    color: black;
+    }
+  .card-body img{
+    position: relative;
+    top: 1.1rem;
+    margin: 30px;
+    left: -6rem;
+    }
+  .container-bar{
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 18px;
+    top: 18rem;
+    transition: width 2s linear;
+    
+    
+    }
+  .progress-container{
+    margin-bottom: 25px;
+    
+    }
+  .container-bar .progress-container .progress-bar{
+    position: relative;
+    width: 220px;
+    height: 20px;
+    border-radius: 6px;
+    background-color: #DBF0FF;
+    box-shadow: 3px 4px 5px 0px rgba(204, 185, 185, .75);
+    transition: width 2s ;
+    }
+  .container-bar .progress-container .progress-bar span{
+      height: 100%;
+      width: 0;
+      background-color: #4CAF50;
+      text-align: center;
+      line-height: 20px;
+      color: white;
+  }
+    
+  .card-body{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: none;
+   
+    }
+    .pic2{
+    position: absolute;
+    left: 0px;
+    top: -20px;
+    margin-top: 0;
+    
+    }
+    .card-body h4{
+    position: absolute;
+    width: 503px;
+    height: 25px;
+    left: 18px;
+    top: 20rem; 
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    /* identical to box height */
+    
+    
+    color: #3D426A;
+    }
+  .pc-two{
+    position: absolute;
+    right: 150px;
+    top: 650px;
+  }
+  
+  .Programs  .card{
+  width: 480px;
+  height: 580px;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+  
+  }
+  
+  .Programs .card {
+    font-size: 22px;
+    font-weight: 700;
+    opacity: 1;
+    
+   display: flex;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+   
+  }
+  
+  .Programs  .card-body{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 220%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    cursor: pointer;
+    pointer-events: none;
+    transform: translateY(100%);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  
+  
+  .Programs :hover .card-body{
+  transform: translateY(0);
+  cursor: pointer;
+  }
+  
+  .Programs :hover .card {
+  transform: translateY(-30%);
+  }
+  .Programs2 :hover .card-body{
+  transform: translateY(0);
+  cursor: pointer;
+  }
+  
+  .Programs2 :hover .swiper-slide {
+  transform: translateY(-30%);
+  }
+  .Programs3 :hover .card-body{
+  transform: translateY(0);
+  cursor: pointer;
+  }
+  
+  .Programs3 :hover .card{
+  transform: translateY(-30%);
+  }
+  
